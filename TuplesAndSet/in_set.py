@@ -1,0 +1,16 @@
+my_set = {"koala" ,"dog", "cat"}
+print(len(my_set))
+my_set.add("lion")
+my_set.add("koala")
+print(my_set)
+print(len(my_set))
+my_set.remove("cat")
+#my_set.remove("fish")
+print(my_set)
+print(len(my_set))
+print("koala" in my_set)
+print("fish" in my_set)
+if "KOALA" in my_set:
+    print("why not ? ")
+print(my_set.pop())
+print(my_set)
