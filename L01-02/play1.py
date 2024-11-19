@@ -1,4 +1,3 @@
-print(9*"koala ")
-print(3*"koala ",end="!!!")
-word="koala"
-print(word.count("a"))
+first=input()
+sec=input()
+print(first+sec)
