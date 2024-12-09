@@ -1,10 +1,14 @@
+
+
 YOUNG=18
 OLD=65
-age=int(input("Enter age "))
+age=int(input("type your age "))
+adult_range=range(YOUNG,OLD+1)
 if age<YOUNG:
-    print("You are to young")
-else :
-    if age<=OLD:
-        print("You are an adult")
-    else :
-        print("You are an elder")
+    message="you are young"
+else:
+    if age in adult_range:
+        message="you are adult"
+    else:
+        message="you are old"
+print(message)
