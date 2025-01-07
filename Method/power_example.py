@@ -1,8 +1,5 @@
-def power(base,exp):
+def power(base ,exp):
     result = 1
     for _ in range(exp):
         result *= base
     return result
-
-value=power(3,5)
-print(value)
