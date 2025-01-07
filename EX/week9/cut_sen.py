@@ -13,5 +13,15 @@ def cut_str(word):
                 back.append(count)
                 index+=1
     return back
-
-print(cut_str("   hi. 3hjkhkj4!34"))
+def cut_str_for(word):
+    back=list()
+    count=0
+    for char in word:
+        if not(char==" " and count==0):
+            if char=="!" or char==".":
+                back.append(count)
+                count=0
+            else:
+                count+=1
+    return back
+print(cut_str_for("   hi. 3hjkhkj4!3 4!"))
