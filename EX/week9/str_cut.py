@@ -4,9 +4,9 @@ def cut_str(word):
 
     data_list=no_point.split("!")
 
-    for x in data_list:
-        no_space=x.lstrip()
+    for i in range(len(data_list)-1):
+        no_space=data_list[i].lstrip()
         back.append(len(no_space))
     return back
 
-print(cut_str("   12 .23 ! 455 5.3453."))
+print(cut_str("   12 .23 !!! 455 5.3453"))
