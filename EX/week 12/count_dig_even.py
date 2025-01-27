@@ -104,10 +104,10 @@ for i in range(4,10):
     # print(dig_in_number(2342, 0))
 def climb_ladder(steps, path=[]):
         if steps == 0:
-            print(path)
+            print("->".join(path))
             return
         if steps >= 1:
-            climb_ladder(steps - 1, path + [1])  # לטפס שלב אחד
+            climb_ladder(steps - 1, path+["1"])
         if steps >= 2:
-            climb_ladder(steps - 2, path + [2])  # לטפס שני שלבים
-#climb_ladder(4)
+            climb_ladder(steps - 2, path + ["2"])
+climb_ladder(4)
